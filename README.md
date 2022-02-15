@@ -19,6 +19,8 @@ dotnet run
 
 The service will then run on [localhost:7086](https://localhost:7086/).
 
+The OpenAPI documenation is at [localhost:7086/swagger](https://localhost:7086/swagger/index.html).
+
 ## To Record Calls
 
 ```bash
