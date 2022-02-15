@@ -1,4 +1,11 @@
+using RecorderApi.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<RecorderApiContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("RecorderApiContext")));
 
 // Add services to the container.
 
